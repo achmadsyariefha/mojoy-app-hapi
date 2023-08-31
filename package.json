@@ -1,0 +1,41 @@
+{
+  "name": "mojoy-app-hapi",
+  "version": "1.0.0",
+  "description": "Mojoy App API with hapi",
+  "main": "index.js",
+  "scripts": {
+    "start-prod": "NODE_ENV=production node ./src/server.js",
+    "start-dev": "nodemon ./src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ./src",
+    "migrate": "node-pg-migrate"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/achmadsyariefha/mojoy-app-hapi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/achmadsyariefha/mojoy-app-hapi/issues"
+  },
+  "homepage": "https://github.com/achmadsyariefha/mojoy-app-hapi#readme",
+  "devDependencies": {
+    "dotenv": "^16.3.1",
+    "eslint": "^8.48.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.28.1",
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "@hapi/hapi": "^21.3.2",
+    "@hapi/jwt": "^3.2.0",
+    "auto-bind": "^5.0.1",
+    "bcrypt": "^5.1.1",
+    "joi": "^17.10.0",
+    "nanoid": "^4.0.2",
+    "node-pg-migrate": "^6.2.2",
+    "pg": "^8.11.3"
+  }
+}
