@@ -22,7 +22,6 @@
   },
   "homepage": "https://github.com/achmadsyariefha/mojoy-app-hapi#readme",
   "devDependencies": {
-    "dotenv": "^16.3.1",
     "eslint": "^8.48.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.28.1",
@@ -33,6 +32,7 @@
     "@hapi/jwt": "^3.2.0",
     "auto-bind": "^5.0.1",
     "bcrypt": "^5.1.1",
+    "dotenv": "^16.3.1",
     "joi": "^17.10.0",
     "nanoid": "^4.0.2",
     "node-pg-migrate": "^6.2.2",
