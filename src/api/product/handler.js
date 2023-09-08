@@ -7,6 +7,16 @@ class ProductHandler {
 
     autoBind(this);
   }
+
+  async getProducts() {
+    const products = await this._service.getAllProducts();
+    return {
+      status: 'success',
+      data: {
+        products,
+      },
+    };
+  }
 }
 
 module.exports = ProductHandler;
