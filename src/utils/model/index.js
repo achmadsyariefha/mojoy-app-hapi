@@ -18,4 +18,16 @@ const mapDBToModelProduct = ({
   createdBy: created_by,
 });
 
-module.exports = { mapDBToModelProduct };
+const mapDBToModelUser = ({
+  id,
+  username,
+  email,
+  password,
+}) => ({
+  id,
+  username,
+  email,
+  password,
+});
+
+module.exports = { mapDBToModelProduct, mapDBToModelUser };
